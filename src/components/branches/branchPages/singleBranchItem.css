@@ -1,0 +1,62 @@
+.single_branch_page_main {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.single_branch_page_item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 1rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid #f5f5f5;
+}
+
+.single_branch_page_image {
+  height: 330px;
+  width: 100%;
+  overflow: hidden;
+}
+.single_branch_page_image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.single_branch_feature_item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+.single_branch_feature_item span {
+  color: gray;
+  font-size: 14px;
+}
+
+.single_branch_page_action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.sine_branch_page_auth {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.sine_branch_page_auth svg {
+  color: seagreen;
+  font-size: 1.2rem;
+}
+.sine_branch_page_auth span{
+    font-style: italic;
+    color: orangered;
+}

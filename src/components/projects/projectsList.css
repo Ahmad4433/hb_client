@@ -1,0 +1,12 @@
+.project_list_main {
+  padding: 0 4rem;
+}
+
+.project_list {
+  padding: 2rem;
+  border-radius: 6px;
+}
+.project_load_action {
+  text-align: right;
+
+}

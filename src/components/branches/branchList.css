@@ -1,0 +1,12 @@
+.branch_list_main {
+  padding: 4rem;
+}
+
+.branch_list_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+}

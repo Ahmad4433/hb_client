@@ -1,0 +1,120 @@
+.all_listing_container {
+  background-color: white;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.all_listing_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+.all-listing_inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.all_listings_filter_types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.listig_filter_type_item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.4rem;
+  border: 1px solid #ccc;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  justify-content: center;
+}
+.listig_filter_type_item * {
+  color: gray;
+}
+
+.listig_filter_type_item:hover {
+  background-color: orangered;
+}
+
+.listig_filter_type_item:hover * {
+  color: white;
+}
+
+.listing_filter_purpose {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.listing_filter_purpose div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: gray;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: orangered;
+  }
+}
+.listing_filter_purpose div span {
+  text-transform: uppercase;
+}
+
+.all_listing_filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 6px;
+  /* padding: 1rem; */
+  /* box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); */
+  /* margin-bottom: 2rem; */
+}
+
+.listing_filter_actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.listing_banner {
+  background-image: url("../../assets/listing_banner.jpg");
+  height: 400px;
+  width: 100%;
+  position: relative;
+  background-position: top;
+}
+
+.listin_banner_overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.509);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  gap: 2rem;
+}
+.listin_banner_overlay p:nth-child(1) {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+.listin_banner_overlay p:nth-child(2) {
+  width: 50%;
+  line-height: 1.6;
+  font-size: 14px;
+}

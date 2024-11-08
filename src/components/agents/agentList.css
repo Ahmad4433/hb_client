@@ -1,0 +1,10 @@
+.agent_list_main {
+  padding: 2rem;
+}
+
+.agent_container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+}

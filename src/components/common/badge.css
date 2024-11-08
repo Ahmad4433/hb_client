@@ -1,0 +1,11 @@
+.single_listing_overlay {
+  color: white;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+}

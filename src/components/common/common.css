@@ -1,0 +1,58 @@
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+}
+
+.flex_center_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.flex_row {
+  display: flex;
+  align-items: center;
+}
+
+.gap_1rem {
+  gap: 1rem;
+}
+
+.orange {
+  color: orangered;
+}
+.bold {
+  font-weight: 700;
+}
+
+.gray {
+  color: gray;
+}
+
+.small {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.large {
+  font-size: 1.4rem;
+}
+
+.captlize {
+  text-transform: capitalize;
+}
+.section_title {
+  font-weight: 500;
+  text-transform: capitalize;
+  padding-bottom: 0.6rem;
+  display: inline-block;
+}
+
+.page_pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}

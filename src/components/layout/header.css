@@ -1,0 +1,27 @@
+.header_main {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header_container {
+  background-color: rgba(0, 0, 0, 0.601);
+  backdrop-filter: blur(10px);
+  padding: 0.8rem 2rem;
+}
+
+.header_menus {
+  gap: 2rem;
+}
+
+.header_menus a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s;
+  &:hover {
+    color: orangered;
+    transition: all 0.2s;
+  }
+}
