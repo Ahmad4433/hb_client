@@ -18,7 +18,7 @@ import ProjectElevation from "./ProjectElevation";
 import { buildingImage } from "../../utils/images";
 import ProjectCategorySlider from "./ProjectCategorySlider";
 import { SwiperSlide } from "swiper/react";
-const SingleProject = ({ index }) => {
+const SingleProject = ({ index, item }) => {
   const elevationRef = useRef(null);
   const [width, setWidth] = useState(null);
 
@@ -99,27 +99,27 @@ const SingleProject = ({ index }) => {
   return (
     <div className="single_project_main">
       <div className="single_project_container">
-        <p className="single_project_heading">18-park residential</p>
+        <p className="single_project_heading">{item?.title}</p>
         <div className="single_project_high_lights">
           <Card>
             <div className="single_project_high_light">
               <IoLocationOutline />
               <p style={{ textAlign: "center" }} className="captlize">
-                main canal bank road opposite to bahria town main gate
+                {item?.address}
               </p>
             </div>
           </Card>
           <Card>
             <div className="single_project_high_light">
               <MdOutlinePayments />
-              <p className="single_project_downpayment">10%</p>
+              <p className="single_project_downpayment">{item?.downPayment}%</p>
               <span>Down Payment</span>
             </div>
           </Card>
           <Card>
             <div className="single_project_high_light">
               <TiChartAreaOutline />
-              <p className="single_project_downpayment">4 Kanal</p>
+              <p className="single_project_downpayment">{item?.buildingArea}</p>
               <span>Total Area</span>
             </div>
           </Card>
@@ -139,20 +139,25 @@ const SingleProject = ({ index }) => {
         >
           <div style={{ width: width / 2 + "px" }}>
             <span className="section_title">Elevation</span>
-            <ProjectElevation />
+            <ProjectElevation elevation={item?.elevation} />
           </div>
           <div className="single_project_video">
             <span className="section_title">Site Video</span>
-            <YouTubeEmbed videoId="Cqe_Fz7Emak" />
+            <YouTubeEmbed videoId={item.videoUrl} />
           </div>
         </div>
         <div>
           <span className="section_title">Major Categories</span>
           <div>
             <ProjectCategorySlider>
-              {categories.map((item, index) => (
+              {item?.category.map((cate, index) => (
                 <SwiperSlide>
-                  <ProjectCategory key={index} item={item} />
+                  <ProjectCategory
+                    key={index}
+                    item={cate}
+                    user={item?.user}
+                    project={item?.title}
+                  />
                 </SwiperSlide>
               ))}
             </ProjectCategorySlider>
@@ -162,14 +167,14 @@ const SingleProject = ({ index }) => {
           <div>
             <span className="section_title">Ammenties</span>
             <div className="single_project_ammenties">
-              {projectAmenities.map((item, index) => (
+              {item?.ammenity?.map((item, index) => (
                 <ProjectAmmenties item={item} key={index} />
               ))}
             </div>
           </div>
           <div className="project_map_location">
             <span className="section_title">Location</span>
-            <MapIframe />
+            <MapIframe map={item?.mapUrl} />
           </div>
         </div>
       </div>

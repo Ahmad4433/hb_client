@@ -15,9 +15,10 @@
 }
 
 .project_ammenty_main span {
-  font-size: 12px;
+  font-size: 14px;
   text-transform: capitalize;
 }
 .project_ammenty_main svg {
   font-size: 1.2rem;
+  color: gray;
 }

@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
-const ProjectElevation = () => {
+const ProjectElevation = ({ elevation }) => {
   return (
     <>
       <Swiper
@@ -18,7 +18,7 @@ const ProjectElevation = () => {
         pagination={{ clickable: true }}
         modules={[Navigation, Autoplay, Pagination]}
       >
-        {buildingImage.map((item, index) => {
+        {elevation?.map((item, index) => {
           return (
             <SwiperSlide key={index}>
               <div className="single_project_elevation">

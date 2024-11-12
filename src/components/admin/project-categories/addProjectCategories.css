@@ -1,15 +1,10 @@
-.add_project_main {
-  padding: 2rem;
-}
-
-.aadd_project_items {
+.add_prject_category_main {
   padding: 1rem;
 }
 
-.add_project_header {
+.add_category_actions {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
-  padding: 1rem;
 }
